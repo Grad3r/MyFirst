@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<a href="/">НА ГОЛОВНУ</a>
+
+{{#if allUsers}}
+    {{#each allUsers}}
+        <br>
+        Login:{{this.name}}
+        <br>
+        Password:{{this.password}}
+        <br>
+        e-mail:{{this.email}}
+        <br>
+
+
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <a href="/delete/{{this.id}}">
+            ВИДАЛИТИ
+        </a>
+        <p></p>
+    {{/each}}
+{{else}}  <h2><p>База данних є пустою</p></h2>
+{{/if}}
+
+<div id="footer">
+    <a href="/baseofusers">База користувачів</a>
+</div>
+
+
+</body>
+</html>

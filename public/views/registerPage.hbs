@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<a href="/">НА ГОЛОВНУ</a>
+<a href="/login"> Увійти</a>
+<h1>РЕЄСТРАЦІЯ</h1>
+<form action="/reguser" method="post">
+    <div class="group">
+        <input type="text" name="name" required>
+        <span class="bar"></span>
+        <label>Імя</label>
+    </div>
+    <div class="group">
+        <input type="email" name="email" required>
+        <span class="bar"></span>
+        <label>Ваш e-mail</label>
+    </div>
+    <div class="group">
+        <input type="password" name="password" required>
+        <span class="bar"></span>
+        <label>Введіть Ваш пароль</label>
+    </div>
+
+    <input type="submit" value="Зареєструватися">
+
+    <div id="footer">
+        <a href="/baseofusers">База користувачів</a>
+    </div>
+</form>
+</body>
+</html>
