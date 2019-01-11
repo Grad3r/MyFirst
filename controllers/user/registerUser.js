@@ -1,6 +1,5 @@
 let dataBase = require('../../dataBase').getInstance();
 
-
 module.exports = async (req, res) => {
 
     try {
@@ -25,7 +24,7 @@ module.exports = async (req, res) => {
             email
         });
 
-        res.redirect('/login');
+        res.render('loginPage');
     } catch (e) {
         res.render('errorPage', {message: e.message})
     }

@@ -12,6 +12,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.4.0",
+    "local-storage": "^1.4.2",
     "mysql2": "^1.6.4",
     "sequelize": "^4.42.0"
   }
