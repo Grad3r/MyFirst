@@ -15,6 +15,11 @@
     "jsonwebtoken": "^8.4.0",
     "local-storage": "^1.4.2",
     "mysql2": "^1.6.4",
-    "sequelize": "^4.42.0"
+    "sequelize": "^4.42.0",
+    "soket.io": "^1.0.0"
+  },
+  "devDependencies": {
+    "express-static": "^1.2.6",
+    "socket.io": "^2.2.0"
   }
 }
